@@ -4,7 +4,7 @@ const router = Router()
 
 router.get('/', Transaction.getTransaction)
 router.post('/create', Transaction.createdTransaction)
-router.delete('/', Transaction.deleteTransaction)
+router.post('/delete', Transaction.deleteTransaction)
 router.put('/', Transaction.updateTransaction)
 
 export default router
