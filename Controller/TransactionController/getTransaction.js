@@ -7,7 +7,7 @@ const GetTransactions = async (req, res) => {
             if (req?.query?.transaction_type) {
                 filters['transaction_type'] = req?.query?.transaction_type
             }
-            if (req?.query?.transaction) {
+            if (req?.query?.date) {
                 filters['transaction_date'] = req?.query?.date
             }
         }
