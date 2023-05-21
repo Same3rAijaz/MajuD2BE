@@ -6,7 +6,7 @@ const JWTVerify = async (req, res, next) => {
         const token = await req?.headers['authorization']?.split(" ")[1]
         if (token && jwt.verify(token, process.env.JWT_SECRET_KEY)) {
             const decoded_token = jwt.decode(token)
-            req.body.user_id = decoded_token
+            req.betoken = decoded_token
             next()
         } else {
             throw new Error("Please Provide Authentication Token!")
