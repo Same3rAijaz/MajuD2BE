@@ -16,4 +16,4 @@ const JWTVerify = async (req, res, next) => {
     }
 }
 
-export default JWTVerify
+export default JWTVerify    
